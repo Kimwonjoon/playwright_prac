@@ -3,4 +3,15 @@
 
 E2E 테스트 툴 Playwright 연습 레포입니다.
 
-local test
+## usage
+### build
+```bash
+# container 빌드
+# docker build --no-cache -t <container name>:<version> .
+```
+
+### run
+```bash
+# docker 실행
+# docker run --rm -v $(pwd):/app playtest:0.1.0
+```
