@@ -3,17 +3,14 @@ FROM mcr.microsoft.com/playwright/python:v1.49.1-jammy
 # 작업 디렉토리 설정
 WORKDIR /app
 
-# 로컬 파일 전부 복사사
+# 로컬 파일 전부 복사
 COPY . .
 
 # 필요한 Python 패키지 설치
 RUN pip install -r requirements.txt
 
-# Playwright Python 라이브러리 설치
-RUN pip install playwright
-
-# Playwright 브라우저 설치
-RUN python -m playwright install
+# playwright에 브라우저는 포함되어있기 때문에 install 필요없음
+# RUN python -m playwright install
 
 # 필요한 의존성 설치 (X 서버 관련)
 # headless mode 관련 xvfb 사용하지 않으면 headless 사용 불가능능

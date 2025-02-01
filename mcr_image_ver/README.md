@@ -3,9 +3,6 @@
 
 E2E 테스트 툴 Playwright 연습 레포입니다.
 
-mcr_image_ver : ms 기존 playwright 이미지
-py_image_ver : python 이미지로 pip install playwright
-
 ## usage
 ### build
 ```bash
