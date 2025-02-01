@@ -29,4 +29,5 @@ RUN apt-get update && apt-get install -y \
 # 기본 명령어(스크립트 실행 등)
 # CMD ["python", "test1.py"]
 # headless 사용을 위한 실행 방법
-CMD xvfb-run -a python test1.py
+# CMD xvfb-run -a python test1.py
+CMD ["pytest", "-v", "-n", "4"]
